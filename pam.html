@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BERTHANIA COLLEGE OF ENGINEERING</title>
+    <style>
+        body {
+            background-color: lightblue;
+            background-image: url('college.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        form {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: gold;
+            color: white; 
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgoldenrod; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">STUDENTS OPINIONS FORM</h1>
+        <div class="logo">
+            <img src="africa.jpg" alt="Reload">
+        </div>
+        <form action="#" method="post">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="faculty">Faculty:</label>
+            <input type="text" id="faculty" name="faculty" required><br><br>
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="year" required><br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="opinion">Opinion:</label><br>
+            <textarea id="opinion" name="opinion" rows="5" cols="40" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </html>
